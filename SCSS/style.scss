@@ -19,14 +19,23 @@ nav {
   }
 }
 
-.container-md {
-  height: 250px;
-  margin-top: 5%;
+.headerIMG {
+  background-image: url("/ressources/images/header.jpg");
+  width: auto;
+  height: 350px;
+  .presentationContainer {
+    height: 210px;
+    h1 {
+      padding-top: 5%;
+    }
+    p {
+      text-align: justify;
+    }
+  }
 }
 
 .article1 {
   min-height: 50vh;
-  margin-top: 5%;
   background-color: rgba($color: $light, $alpha: 0.1);
   .title {
     padding-top: 25px;
@@ -37,7 +46,9 @@ nav {
     justify-content: space-around;
     .iconContainer {
       max-width: 350px;
+      text-align: center;
       img {
+        margin-bottom: 25px;
         height: 50px;
         width: 50px;
       }
@@ -52,7 +63,6 @@ nav {
 
 @media screen and (max-width: 1500px) {
   .article1 {
-    margin-top: 5%;
     background-color: rgba($color: $light, $alpha: 0.1);
     .title {
       padding-top: 25px;
@@ -79,7 +89,6 @@ nav {
 
 @media screen and (max-width: 750px) {
   .article1 {
-    margin-top: 5%;
     background-color: rgba($color: $light, $alpha: 0.1);
     .title {
       padding-top: 25px;
