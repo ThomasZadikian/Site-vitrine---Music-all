@@ -4,32 +4,26 @@ body {
   color: white;
 }
 
-nav {
-  height: 90px;
-  .active {
-    border-radius: 7px;
-    background-color: rgba($color: $light, $alpha: 0.3);
-  }
-  li {
-    margin: 2px;
-    :hover:not(.active) {
-      border-radius: 7px;
-      background-color: rgba($color: $light, $alpha: 0.1);
-    }
-  }
-}
-
 .headerIMG {
-  background-image: url("/ressources/images/header.jpg");
+  background-image: linear-gradient(rgba($black, 0.9), rgba($black, 0.4)),
+    url("/ressources/images/header.jpg");
+  background-position: 43%;
   width: auto;
-  height: 350px;
+  height: 300px;
   .presentationContainer {
+    text-align: center;
     height: 210px;
     h1 {
       padding-top: 5%;
     }
-    p {
-      text-align: justify;
+    button {
+      margin: 15px;
+      margin-top: 50px;
+      height: 55px;
+      width: 350px;
+      color: $white;
+      border-color: $white;
+      background-color: rgba($color: $black, $alpha: 0.3);
     }
   }
 }
@@ -56,6 +50,12 @@ nav {
         text-align: justify;
       }
     }
+  }
+}
+
+footer {
+  p {
+    margin: 1px;
   }
 }
 
@@ -87,7 +87,10 @@ nav {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
+  .headerIMG {
+    height: 350px;
+  }
   .article1 {
     background-color: rgba($color: $light, $alpha: 0.1);
     .title {
@@ -126,7 +129,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 575px) {
   nav {
     .title {
       display: none;
