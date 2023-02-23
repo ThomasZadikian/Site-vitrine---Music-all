@@ -42,6 +42,9 @@ body {
   .title {
     padding-top: 25px;
   }
+  .card-title {
+    background-color: rgba($color: $dark, $alpha: 0);
+  }
   .icons {
     margin-top: 5%;
     display: flex;
