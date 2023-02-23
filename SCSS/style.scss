@@ -63,7 +63,8 @@ body {
 
 footer {
   display: table-row;
-  height: 100px; /* à titre d'exemple */
+  height: 100px;
+  max-width: 100%;
   background-color: rgba($color: $dark, $alpha: 1);
   p {
     margin: 1px;
