@@ -28,7 +28,7 @@ body {
   }
 }
 
-.article1 {
+.article {
   min-height: 50vh;
   background-color: rgba($color: $light, $alpha: 0.1);
   .title {
@@ -54,6 +54,7 @@ body {
 }
 
 footer {
+  margin-top: 50px;
   p {
     margin: 1px;
   }
@@ -62,7 +63,7 @@ footer {
 // Media query
 
 @media screen and (max-width: 1500px) {
-  .article1 {
+  .article {
     background-color: rgba($color: $light, $alpha: 0.1);
     .title {
       padding-top: 25px;
@@ -91,7 +92,7 @@ footer {
   .headerIMG {
     height: 350px;
   }
-  .article1 {
+  .article {
     background-color: rgba($color: $light, $alpha: 0.1);
     .title {
       padding-top: 25px;
